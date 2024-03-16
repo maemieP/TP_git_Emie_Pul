@@ -6,3 +6,7 @@ def enregistrementJson (data, filename) :
 monDictionaire = ('key', 'value')
 enregistrementJson = (monDictionaire , 'data.json')
 
+def chargerJson (filename):
+	with open(filename, 'r') as f:
+		data = json.load(f)
+	return data
