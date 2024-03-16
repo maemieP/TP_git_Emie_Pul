@@ -10,3 +10,8 @@ def chargerJson (filename):
 	with open(filename, 'r') as f:
 		data = json.load(f)
 	return data
+
+import os
+def deletebdd(filename):
+	if os.path.exists(filename):
+		os.remove(filename)
